@@ -7,10 +7,13 @@ jobs:
   my_job:
     name: deploy to staging
     runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        yocto_version: ['mickledore', 'scarthgap']
     steps:
       - name: echo
         run: |
-          echo "hello"
+          echo "hello:${{ matrix.yocto_version }}"
           cat /etc/os-release
         
     
