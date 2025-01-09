@@ -11,6 +11,9 @@ jobs:
       matrix:
         yocto_version: ['mickledore'] #, 'scarthgap']
     steps:
+      - uses: actions/checkout@v2
+        with:
+          path: 'meta-find-program'
       - name: build
         run: |
           ls .
