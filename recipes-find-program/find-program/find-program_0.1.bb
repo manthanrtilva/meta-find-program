@@ -10,8 +10,8 @@ S = "${WORKDIR}"
 
 inherit cmake pkgconfig
 
-EXTRA_OECMAKE = "-DFIREBASE_INCLUDE_LIBRARY_DEFAULT=OFF -DFIREBASE_INCLUDE_AUTH=ON -DFIREBASE_INCLUDE_FIRESTORE=ON"
+EXTRA_OECMAKE = ""
 
-do_configure:append() {
-    bbplain "Hello,Manthan"
-}
+# do_configure:append() {
+#     bbplain "Hello,Manthan"
+# }
